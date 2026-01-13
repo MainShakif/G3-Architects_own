@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* google font : WorkSans */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work_sans_font {
+  font-family: "Work Sans", sans-serif;
+}
 
 /* shared style  */
 .container {
-  width: 75%;
+  width: 75.66%;
   margin: 0 auto;
 }
 main > section {
@@ -22,6 +28,10 @@ main > section {
   border-radius: 8px;
   border: none;
   cursor: pointer;
+}
+#our_features,
+#features_will_enjoy {
+  margin-top: 130px;
 }
 .section_title {
   font-size: 45px;
@@ -93,6 +103,7 @@ header {
   margin-top: 130px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   gap: 70px;
 }
 
@@ -105,6 +116,68 @@ header {
   max-width: 537px;
   margin: 0 auto;
 }
+
+/* Features you will love & enjoy styles */
+
+#features_will_enjoy {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+#features_will_enjoy_container #features_will_enjoy_content {
+  width: 586px;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+#features_will_enjoy_container #features_will_enjoy_content .section_title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+  border-radius: 6px;
+}
+#features_will_enjoy_cards_container .features_will_enjoy_card {
+  width: 586px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+#features_will_enjoy_cards_container .features_will_enjoy_card .card_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #131313;
+  margin-bottom: 10px;
+}
+#features_will_enjoy_cards_container .features_will_enjoy_card .card_desc {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 6px;
+}
+
+#features_will_enjoy_image img {
+  max-width: 708px;
+}
+
+#features_will_enjoy_image #experience_badge {
+  padding: 66px 42px;
+  border-radius: 8px;
+  position: relative;
+  top: -100px;
+  left: -100px;
+}
+#features_will_enjoy_image #experience_badge #years {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+#features_will_enjoy_image #experience_badge #experience {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 20px;
+}
+
 /* small devices media query */
 @media screen and (max-width: 576px) {
   .btn_primary {
@@ -117,7 +190,9 @@ header {
   .section_title {
     font-size: 35px;
   }
-  #navbar {
+  #navbar,
+  #our_features,
+  #features_will_enjoy {
     flex-direction: column;
   }
   #nav_links {
@@ -137,37 +212,55 @@ header {
   #banner_content #banner_title {
     font-size: 2rem;
   }
-  #our_features {
-    flex-direction: column;
-  }
+
   #teams_image_container {
     grid-template-columns: 1fr;
   }
+  #features_will_enjoy {
+    gap: 60px;
+  }
   #features_container {
     text-align: center;
+  }
+  #features_will_enjoy_container #features_will_enjoy_content {
+    width: 310px;
+    margin: 0 auto;
+  }
+  #features_will_enjoy_cards_container .features_will_enjoy_card {
+    width: 310px;
+    margin: 0 auto;
+  }
+  #features_will_enjoy_image #experience_badge {
+    visibility: hidden;
+  }
+  #features_will_enjoy_image img {
+    width: 500px;
   }
 }
 
 /* media queries for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .container {
-    width: 99%;
+    width: 98%;
     margin: 0 auto;
   }
-  #navbar {
+  #navbar,
+  #our_features,
+  #features_will_enjoy {
     flex-direction: column;
   }
   #navbar {
     margin-bottom: 50px;
     gap: 25px;
   }
-  #our_features {
-    flex-direction: column;
-  }
+
   #teams_image_container {
     grid-template-columns: 1fr;
   }
   #features_container {
     text-align: center;
+  }
+  #features_will_enjoy_image #experience_badge {
+    visibility: hidden;
   }
 }
