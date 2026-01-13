@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* shared style  */
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+/* navbar styles */
+#navbar {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav_links {
+  display: flex;
+  gap: 30px;
+}
+
+#nav_links .nav_item {
+  list-style: none;
+}
+
+#nav_links .nav_item .nav_link {
+  text-decoration: none;
+}
