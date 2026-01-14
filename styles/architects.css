@@ -30,7 +30,8 @@ main > section {
   cursor: pointer;
 }
 #our_features,
-#features_will_enjoy {
+#features_will_enjoy,
+#some_facts {
   margin-top: 130px;
 }
 .section_title {
@@ -46,9 +47,7 @@ main > section {
   margin-bottom: 32px;
 }
 /* shared styles ends here  */
-body {
-  border: 2px solid saddlebrown;
-}
+
 header {
   background-color: rgba(255, 144, 14, 0.1);
 }
@@ -181,10 +180,49 @@ header {
   line-height: 20px;
 }
 
+/* some facts container styles */
+#facts_card_container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#facts_card_container .fact_card {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  max-width: 241px;
+  padding: 30px;
+}
+#facts_card_container .fact_card > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#facts_card_container .fact_card > div img {
+  width: 45px;
+  margin-bottom: 20px;
+}
+#facts_card_container .fact_card > div .card_number {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #424242;
+  margin-bottom: 20px;
+}
+#facts_card_container .fact_card > div .card_name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #727272;
+}
+
 /* small devices media query */
 @media screen and (max-width: 576px) {
   .btn_primary {
     font-size: 1rem;
+  }
+  main > section {
+    width: 92%;
+    margin: 0 auto;
   }
   .container {
     width: 98%;
@@ -239,10 +277,18 @@ header {
   #features_will_enjoy_image img {
     width: 500px;
   }
+  #facts_card_container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 /* media queries for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  main > section {
+    width: 92%;
+    margin: 0 auto;
+  }
   .container {
     width: 98%;
     margin: 0 auto;
@@ -265,5 +311,8 @@ header {
   }
   #features_will_enjoy_image #experience_badge {
     visibility: hidden;
+  }
+  #facts_card_container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
