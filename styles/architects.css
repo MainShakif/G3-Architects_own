@@ -41,7 +41,8 @@ main > section {
 #our_features,
 #features_will_enjoy,
 #some_facts,
-#our_sponsors {
+#our_sponsors,
+#footer_container {
   margin-top: 130px;
 }
 .section_title {
@@ -246,7 +247,19 @@ header {
   grid-template-columns: repeat(5, 1fr);
   filter: grayscale(100%);
 }
-
+/* footer section */
+#footer_container {
+  background-color: #fff4e7;
+  text-align: center;
+  padding: 30px 350px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+#footer_container p {
+  color: #424242;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
 /* small devices media query */
 @media screen and (max-width: 576px) {
   .btn_primary {
@@ -316,6 +329,9 @@ header {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
+  }
+  #footer_container {
+    padding: 15px;
   }
 }
 
