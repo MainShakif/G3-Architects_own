@@ -47,7 +47,9 @@ main > section {
   margin-bottom: 32px;
 }
 /* shared styles ends here  */
-
+body {
+  border: ps solid red;
+}
 header {
   background-color: rgba(255, 144, 14, 0.1);
 }
