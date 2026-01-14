@@ -5,12 +5,12 @@
 }
 /* google font : WorkSans */
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-* {
+/* * {
   border: 1px solid red;
 }
 body {
   border: 3px dashed blue;
-}
+} */
 .work_sans_font {
   font-family: "Work Sans", sans-serif;
 }
